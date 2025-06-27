@@ -1,8 +1,19 @@
 package GaetanoMiscio;
 
+
+import GaetanoMiscio.entities.Collezione;
+
+
 public class Application {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        Collezione listGames = new Collezione();
+
+
     }
+
+
 }
+
+

@@ -1,21 +1,21 @@
 package GaetanoMiscio.entities;
 
 public class BoardGames extends Games {
-    private int numeroGiocatri;
+    private int numeroGiocatori;
     private int durataMediaPartita;
 
-    public BoardGames(int id, String titolo, int anno, double prezzo, int numeroGiocatri, int durataMediaPartita) {
+    public BoardGames(int id, String titolo, int anno, double prezzo, int numeroGiocatori, int durataMediaPartita) {
         super(id, titolo, anno, prezzo);
-        this.numeroGiocatri = numeroGiocatri;
+        this.numeroGiocatori = numeroGiocatori;
         this.durataMediaPartita = durataMediaPartita;
     }
 
-    public int getNumeroGiocatri() {
-        return numeroGiocatri;
+    public int getNumeroGiocatori() {
+        return numeroGiocatori;
     }
 
-    public void setNumeroGiocatri(int numeroGiocatri) {
-        this.numeroGiocatri = numeroGiocatri;
+    public void setNumeroGiocatori(int numeroGiocatori) {
+        this.numeroGiocatori = numeroGiocatori;
     }
 
     public int getDurataMediaPartita() {
@@ -34,7 +34,7 @@ public class BoardGames extends Games {
                 ", titolo='" + titolo + '\'' +
                 ", anno=" + anno +
                 ", prezzo=" + prezzo +
-                ", numeroGiocatri=" + numeroGiocatri +
+                ", numeroGiocatri=" + numeroGiocatori +
                 '}';
     }
 }
