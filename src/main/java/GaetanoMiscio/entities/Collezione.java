@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Collezione {
     private Map<Integer, Games> collectionGames = new HashMap<>();
-    
+
     public void addGames(Games games) {
         if (collectionGames.containsKey(games.getId()))
             collectionGames.put(games.getId(), games);
@@ -51,6 +51,13 @@ public class Collezione {
         Optional<Games> maxGamePrice = collectionGames.values().stream().max(Comparator.comparing(Games::getPrezzo));
         double mediaPrice = collectionGames.values().stream().mapToDouble(Games::getPrezzo).average().orElse(0);
 
+    }
+
+    @Override
+    public String toString() {
+        return "Collezione{" +
+                "collectionGames=" + collectionGames +
+                '}';
     }
 
 
