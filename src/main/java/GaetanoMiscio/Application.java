@@ -52,12 +52,12 @@ public class Application {
                     String sceltaTipo = scanner.nextLine().trim().toUpperCase();
 
                     if ("V".equals(sceltaTipo)) {
-                        System.out.print("Inserisci Piattaforma (PC, PLAYSTATION, XBOX, NINTENDO_SWITCH, MOBILE): ");
+                        System.out.print("Inserisci Piattaforma (PC, PLAYSTATION, XBOX): ");
                         Platform piattaforma = Platform.valueOf(scanner.nextLine().trim().toUpperCase());
                         System.out.print("Inserisci Durata (ore): ");
                         int durata = scanner.nextInt();
                         scanner.nextLine();
-                        System.out.print("Inserisci Tipo Gioco (FANTASY, AZIONE, SPORT, AVVVENTURA): ");
+                        System.out.print("Inserisci Tipo Gioco (FANTASY, ACTION, SPORT, ADVENTURE): ");
                         GameType tipo = GameType.valueOf(scanner.nextLine().trim().toUpperCase());
                         listGames.addGames(new Videogames(id, titolo, anno, prezzo, piattaforma, durata, tipo));
                     } else if ("T".equals(sceltaTipo)) {
